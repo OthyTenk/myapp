@@ -3,6 +3,7 @@
 echo "Hello World";
 
 
-var $arrayName = array('ba' => 1);
+$arrayName = array(1=>'var');
 
+echo "<br/>" . $arrayName[1];
 ?>
