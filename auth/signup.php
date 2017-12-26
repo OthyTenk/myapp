@@ -4,14 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Нэвтрэх</title>
+  <title>Шинэ бүртгэл</title>
 </head>
 <body>
 
-<form method="post" action="auth/login.php" id="" name="">
+<form method="post" action="auth/reg.php" id="" name="">
 <table>
   <tr>
-    <td colspan="2">Нэвтрэх</td>
+    <td colspan="2">Бүртгэл</td>
+  </tr>
+  <tr>
+    <td>Овог:</td>
+    <td>
+      <input type="text" name="ln" id="ln" size="20" maxlength="20"/>
+    </td>
+  </tr>
+  <tr>
+    <td>Нэр:</td>
+    <td>
+      <input type="text" name="fn" id="fn" size="20" maxlength="20"/>
+    </td>
+  </tr>
+  <tr>
+    <td>Утас:</td>
+    <td>
+      <input type="tel" name="tel" id="tel" size="16" maxlength="16"/>
+    </td>
   </tr>
   <tr>
     <td>Имэйл:</td>
@@ -28,13 +46,11 @@
   <tr>
     <td>&nbsp;</td>
     <td>
-      <input type="submit" name="login" id="login" value="Нэвтрэх"/>
+      <input type="submit" name="login" id="login" value="Бүртгэх"/>
     </td>
   </tr>
 </table>
 <form>
-
-http://www.kodingmadesimple.com/2016/01/php-login-and-registration-script-with-mysql-example.html
 
 </body>
 </html>
