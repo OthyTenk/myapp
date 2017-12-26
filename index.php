@@ -28,7 +28,7 @@ session_start();
                   <li><a href="logout.php">Гарах</a></li>
                   <?php } else { ?>
                   <li><a href="auth/index.php">Нэвтрэх</a></li>
-                  <li><a href="auth/reg.php">Бүртгүүлэх</a></li>
+                  <li><a href="auth/signup.php">Бүртгүүлэх</a></li>
                   <?php } ?>
               </ul>
           </div>
