@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once 'dbconnect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,8 +27,8 @@ session_start();
           <div class="collapse navbar-collapse" id="navbar1">
               <ul class="nav navbar-nav navbar-right">
                   <?php if (isset($_SESSION['usr_id'])) { ?>
-                  <li><p class="navbar-text">Хэрэглэгч <?php echo $_SESSION['usr_name']; ?></p></li>
-                  <li><a href="logout.php">Гарах</a></li>
+                  <li><p class="navbar-text">Хэрэглэгч <?php echo $_SESSION['name']; ?></p></li>
+                  <li><a href="auth/logout.php">Гарах</a></li>
                   <?php } else { ?>
                   <li><a href="auth/index.php">Нэвтрэх</a></li>
                   <li><a href="auth/signup.php">Бүртгүүлэх</a></li>
@@ -38,5 +39,7 @@ session_start();
   </nav>
 
 
+  <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
