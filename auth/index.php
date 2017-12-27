@@ -33,6 +33,7 @@ if (isset($_POST['login'])){
   <title>Нэвтрэх</title>
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
 </head>
 <body>
 
