@@ -18,7 +18,7 @@ if (isset($_POST['login'])){
     $_SESSION['usr_id'] = $row['id'];
     $_SESSION['name'] = $row['fn'];
 
-    header("location: ../index.php");
+    header("location: ../m.php");
   } else {
     $errormsg = "Имэйл эсвэл Нууц үг буруу байна!!";
   }
