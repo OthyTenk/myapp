@@ -20,9 +20,9 @@ $rst = mysqli_query($con, $qry);
       </tr>
     </thead>
     <tbody>
-      <?php while($row = mysqli_fetch_array($rst)) { ?>
+      <?php $num = 0; while($row = mysqli_fetch_array($rst)) { ?>
       <tr>
-        <td>1</td>
+        <td><?php echo ++$num; ?></td>
         <td><?php echo $row['name'] ?></td>
         <td><span class="glyphicon glyphicon-eye-<?php echo $user_status[$row['is_active']] ?>"></span></td>
         <td><?php echo $row['created_date'] ?></td>
