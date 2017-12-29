@@ -15,4 +15,7 @@ function check_s($str){
   return $pwd = mysqli_real_escape_string($str);
 }
 
+//$user_status = array('0' => 'Идэвхитэй', '1' => 'Идэвхигүй');
+
+$user_status = array('0' => 'close', '1' => 'open');
 ?>
