@@ -20,19 +20,24 @@ $rst = mysqli_query($con, $qry);
       </tr>
     </thead>
     <tbody>
-      <?php $num = 0; while($row = mysqli_fetch_array($rst)) { ?>
+      <?php $num = 0; while($row = mysqli_fetch_assoc($rst)) { ?>
       <tr>
         <td><?php echo ++$num; ?></td>
         <td><?php echo $row['name'] ?></td>
-        <td><span class="glyphicon glyphicon-eye-<?php echo $user_status[$row['is_active']] ?>"></span></td>
+        <td>
+          <span class="glyphicon glyphicon-eye-<?php echo $user_status[$row['is_active']] ?>"></span>
+        </td>
         <td><?php echo $row['created_date'] ?></td>
-        <td id="<?php echo $row['id'] ?>">
-          <a href="#" title="Засварлах"><span class="glyphicon glyphicon-edit"></span></a>
-          <a href="#" title="Устгах"><span class="glyphicon glyphicon-trash"></span></a>
+        <td>
+          <a href="edit_user_type.php?edit=<?php echo $row['id'] ?>" title="Засварлах">
+            <span class="glyphicon glyphicon-edit"></span>
+          </a>
+          <a href="" id="delete" title="Устгах" data="<?php echo $row['id'] ?>"  data-toggle="modal" data-target="#delete_user_type">
+            <span class="glyphicon glyphicon-trash"></span>
+          </a>
         </td>
       </tr>
     <?php } ?>
     </tbody>
   </table>
-
 </div>

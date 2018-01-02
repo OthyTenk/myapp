@@ -26,7 +26,16 @@ $page = 'user';
 
             <div class="box box-info">
               <div class="box-title">
-                <h4>Хэрэглэгчийн мэдээлэл</h4>
+                <div class="row">
+                  <div class="col-md-10">
+                    <h4>Хэрэглэгчийн мэдээлэл</h4>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="btn btn-default pull-right" role="button" href="edit_user.php">
+                      <span class="glyphicon glyphicon-plus-sign"></span> Нэмэх
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="box-content">
                 <?php include 'user_list.php'; ?>

@@ -27,7 +27,9 @@ $rst = mysqli_query($con, $qry);
         <td><?php echo $row['email'] ?></td>
         <td><?php echo $row['phone_num'] ?></td>
         <td><?php echo $row['type_id'] ?></td>
-        <td><?php echo $user_status[$row['is_active']] ?></td>
+        <td>
+          <span class="glyphicon glyphicon-eye-<?php echo $user_status[$row['is_active']] ?>"></span>
+        </td>
         <td><?php echo $row['created_date'] ?></td>
         <td><?php echo $row['id'] ?></td>
       </tr>
